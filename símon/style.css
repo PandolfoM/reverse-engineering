@@ -1,0 +1,23 @@
+body {
+  margin: 0px;
+  height: 100vh;
+  cursor: none;
+}
+
+#trailer {
+  height: clamp(1.2rem, 3vw, 3rem);
+  width: clamp(1.2rem, 3vw, 3rem);
+  border-radius: 20px;
+  background-color: black;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 999999;
+  pointer-events: none;
+  opacity: 0;
+  transform: opacity 500ms ease;
+}
+
+body:hover > #trailer {
+  opacity: 1;
+}
