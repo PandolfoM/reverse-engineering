@@ -6,30 +6,90 @@
   font-style: normal;
 }
 
-body {
-  margin: 0px;
-  height: 100vh;
+@font-face {
+  font-family: "Tex Gyre Heros Regular";
+  src: url("./font/texgyreheros-regular-webfont.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --body-border: 10px;
+}
+
+* {
   cursor: none;
 }
 
-nav {
+body,
+html {
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+/* navigatin */
+.navbar {
+  overflow: hidden;
+  position: fixed;
   display: flex;
+  width: 100%;
+  left: 0;
+  top: 0;
   justify-content: space-between;
-  margin: 0px 1rem;
   font-family: "Editorial New Regular";
-  font-size: 1rem;
-  font-weight: 100;
+  border-bottom: 2px solid transparent;
+  transition: border 0.6s ease;
+  background-color: white;
+  height: 2rem;
+  color: black;
+  z-index: 100;
 }
 
-nav > h1, h2, h3 {
+.navbar > h1,
+h3 {
+  margin: 0 10px;
+}
+
+nav > h1,
+h2,
+h3 {
   margin: 0px;
+  color: black;
+  font-size: 1.5rem;
 }
 
+/* Big btns */
+.bigbtns {
+  padding-top: 2rem;
+  min-height: calc(100vh - 3.25rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
+.biggy {
+  width: 100%;
+  height: 28rem;
+  max-height: 28rem;
+  border-radius: 28rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Tex Gyre Heros Regular";
+  font-size: 10rem;
+  border: none;
+  background-color: cadetblue;
+}
+
+.biggy:nth-child(even) {
+  margin: 1rem 0;
+}
+
+/* Cursor */
 #trailer {
   height: clamp(1.2rem, 3vw, 3rem);
   width: clamp(1.2rem, 3vw, 3rem);
-  border-radius: 20px;
+  border-radius: 100%;
   background-color: black;
   position: fixed;
   left: 0px;
@@ -42,4 +102,10 @@ nav > h1, h2, h3 {
 
 body:hover > #trailer {
   opacity: 1;
+}
+
+/* Util */
+.border-bottom {
+  border-bottom: black 2px solid;
+  transition: border 0.6s ease;
 }
