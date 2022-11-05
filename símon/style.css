@@ -1,8 +1,30 @@
+@font-face {
+  font-family: "Editorial New Regular";
+  src: url("./font/ppeditorialnew-ultralight-webfont.woff") format("woff2"),
+    url("./font/ppeditorialnew-ultralight-webfont.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   margin: 0px;
   height: 100vh;
   cursor: none;
 }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 1rem;
+  font-family: "Editorial New Regular";
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+nav > h1, h2, h3 {
+  margin: 0px;
+}
+
 
 #trailer {
   height: clamp(1.2rem, 3vw, 3rem);
