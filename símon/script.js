@@ -2,7 +2,7 @@ const trailer = document.getElementById("trailer");
 
 document.addEventListener("scroll", () => {
   const navbar = document.querySelector(".navbar");
-  const navbarHeight = 100;
+  const navbarHeight = 20;
 
   const distanceFromTop = Math.abs(document.body.getBoundingClientRect().top);
 
