@@ -14,17 +14,14 @@ document.addEventListener("scroll", () => {
 });
 
 const animateTrailer = (e) => {
-  const x = e.clientX - trailer.offsetWidth / 2,
-    y = e.clientY - trailer.offsetHeight / 2;
-
-  const keyframes = {
-    transform: `translate(${x}px, ${y}px)`,
-  };
-
-  trailer.animate(keyframes, {
-    duration: 100,
-    fill: "forwards",
-  });
+  document.documentElement.style.setProperty(
+    "--x",
+    e.clientX + window.scrollX + "px"
+  );
+  document.documentElement.style.setProperty(
+    "--y",
+    e.clientY + window.scrollY + "px"
+  );
 };
 
 document.onmousemove = (e) => {

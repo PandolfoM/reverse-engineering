@@ -25,6 +25,7 @@ body,
 html {
   height: 100vh;
   box-sizing: border-box;
+  background-color: #fff;
 }
 
 /* navigatin */
@@ -67,7 +68,7 @@ h3 {
   justify-content: center;
 }
 
-.biggy {
+.bigbtns > button {
   width: 100%;
   height: 28rem;
   max-height: 28rem;
@@ -81,7 +82,7 @@ h3 {
   background-color: cadetblue;
 }
 
-.biggy:nth-child(even) {
+.bigbtns > button:nth-child(even) {
   margin: 1rem 0;
 }
 
@@ -90,14 +91,16 @@ h3 {
   height: clamp(1.2rem, 3vw, 3rem);
   width: clamp(1.2rem, 3vw, 3rem);
   border-radius: 100%;
-  background-color: black;
-  position: fixed;
-  left: 0px;
-  top: 0px;
+  background-color: #fff;
+  position: absolute;
   z-index: 999999;
   pointer-events: none;
   opacity: 0;
   transform: opacity 500ms ease;
+  top: var(--y, 0);
+  left: var(--x, 0);
+  transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
 }
 
 body:hover > #trailer {
