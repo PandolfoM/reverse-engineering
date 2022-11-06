@@ -26,7 +26,6 @@ html {
   height: 100vh;
   box-sizing: border-box;
   background-color: #fff;
-  overflow-x: hidden;
 }
 
 /* navigatin */
@@ -89,6 +88,65 @@ h3 {
   margin: 1rem 0;
 }
 
+/* work */
+
+.list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+
+.list-item {
+  position: sticky;
+  margin: 0 0 -8rem;
+  padding-bottom: 8rem;
+  background-color: white;
+}
+
+.list-content {
+  display: grid;
+  align-items: flex-start;
+  grid-template-columns: 3fr 12fr 5fr;
+  gap: 0.2rem;
+  height: 4.5rem;
+  font-size: 3.1rem;
+  border-top: 2px solid black;
+  text-align: left;
+  transition: 0.5s height, 0.5s margin-top, 0.5s margin-bottom,
+    0.2s border-top-color;
+  overflow: hidden;
+  padding: 0.4rem 0.2rem 0;
+  font-family: "Tex Gyre Heros Regular";
+  width: 100%;
+  background-color: #fff;
+}
+
+.list-content > span {
+  font-size: inherit;
+  padding-bottom: 0;
+}
+
+.list-content > h2 {
+  font-size: inherit;
+  padding-bottom: 0;
+}
+
+.list-content > h3 {
+  font-size: inherit;
+  text-align: right;
+  padding-bottom: 0;
+  width: 100%;
+}
+
+.list-content:hover {
+  margin-top: -1.6rem;
+  height: 5.6rem;
+  transition: height 0.1s, margin-top 0.1s;
+}
+
 /* Cursor */
 #trailer {
   height: clamp(1.2rem, 3vw, 3rem);
@@ -118,4 +176,8 @@ body:hover > #trailer {
 
 a {
   color: inherit;
+}
+
+p {
+  margin: 0px;
 }
