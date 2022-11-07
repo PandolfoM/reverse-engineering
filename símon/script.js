@@ -26,4 +26,13 @@ const animateTrailer = (e) => {
 
 document.onmousemove = (e) => {
   animateTrailer(e);
+
+  const interactable = e.target.closest(".interactable"),
+    interacting = interactable !== null;
+
+  if (interacting) {
+    trailer.classList.add("onInteract");
+  } else {
+    trailer.classList.remove("onInteract");
+  }
 };
