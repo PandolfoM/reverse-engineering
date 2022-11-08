@@ -1,4 +1,6 @@
 const trailer = document.getElementById("trailer");
+const trailerText = document.getElementById("trailer-text");
+const listContent = document.getElementsByClassName("list-content")
 
 document.addEventListener("scroll", () => {
   const navbar = document.querySelector(".navbar");
@@ -31,8 +33,19 @@ document.onmousemove = (e) => {
     interacting = interactable !== null;
 
   if (interacting) {
-    trailer.classList.add("onInteract");
+    if (interactable.parentElement.nodeName === "LI") {
+      trailerText.style.backgroundColor = interactable.dataset.color
+      trailerText.innerText = `View ${interactable.childNodes[1].childNodes[3].innerText}`
+    } else {
+      trailerText.style.backgroundColor = "#f17170"
+      trailerText.innerText = interactable.dataset.hover
+      trailer.classList.add("onInteract");
+    }
+    trailerText.style.opacity = 1
   } else {
     trailer.classList.remove("onInteract");
+    trailerText.style.opacity = 0
+    trailerText.innerText = ""
   }
 };
+

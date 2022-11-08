@@ -10,9 +10,17 @@
   <body>
     <!-- Navigation -->
     <nav class="navbar">
-      <a class="interactable"><h1>Símon.com</h1></a>
+      <a class="interactable" data-hover="About?"><h1>Símon.com</h1> </a>
+
       <h2>Studio or computational design</h2>
-      <a class="interactable"><h2>About Words</h2></a>
+      <di class="navbar-content">
+        <a class="interactable" data-hover="The offical blurb"
+          ><h2>About</h2></a
+        >
+        <a class="interactable" data-hover="Thoughts and updates"
+          ><h2>Words</h2></a
+        >
+      </div>
     </nav>
 
     <!-- 2 big btns -->
@@ -25,7 +33,7 @@
     <section class="work">
       <ul class="list">
         <li class="list-item">
-          <a>
+          <a class="interactable" data-color="#ff8e00">
             <div class="list-content">
               <span>01</span>
               <h2>Bygdepride</h2>
@@ -34,7 +42,7 @@
           </a>
         </li>
         <li class="list-item">
-          <a>
+          <a class="interactable" data-color="#f0e9e8">
             <div class="list-content">
               <span>02</span>
               <h2>Merknad</h2>
@@ -43,7 +51,7 @@
           </a>
         </li>
         <li class="list-item">
-          <a>
+          <a class="interactable" data-color="#fd8878">
             <div class="list-content">
               <span>03</span>
               <h2>Code of Design</h2>
@@ -52,7 +60,7 @@
           </a>
         </li>
         <li class="list-item">
-          <a>
+          <a class="interactable" data-color="#bbb">
             <div class="list-content">
               <span>04</span>
               <h2>OOO.COM</h2>
@@ -61,7 +69,7 @@
           </a>
         </li>
         <li class="list-item">
-          <a>
+          <a class="interactable" data-color="#c68c5b">
             <div class="list-content">
               <span>05</span>
               <h2>The Macallan</h2>
@@ -70,7 +78,7 @@
           </a>
         </li>
         <li class="list-item">
-          <a>
+          <a class="interactable" data-color="#fb92cb">
             <div class="list-content">
               <span>06</span>
               <h2>Noko Noko</h2>
@@ -79,7 +87,7 @@
           </a>
         </li>
         <li class="list-item">
-          <a>
+          <a class="interactable" data-color="#c3bedb">
             <div class="list-content">
               <span>07</span>
               <h2>Wallpapers</h2>
@@ -88,7 +96,7 @@
           </a>
         </li>
         <li class="list-item">
-          <a>
+          <a class="interactable" data-color="#e4d9d9">
             <div class="list-content">
               <span>08</span>
               <h2>Kva (for)tener du?</h2>
@@ -97,7 +105,7 @@
           </a>
         </li>
         <li class="list-item">
-          <a>
+          <a class="interactable" data-color="#e0a568">
             <div class="list-content">
               <span>09</span>
               <h2>Carbon Tracker</h2>
@@ -106,7 +114,7 @@
           </a>
         </li>
         <li class="list-item">
-          <a>
+          <a class="interactable" data-color="#fee8ea">
             <div class="list-content">
               <span>10</span>
               <h2>Paginate</h2>
@@ -115,7 +123,7 @@
           </a>
         </li>
         <li class="list-item">
-          <a>
+          <a class="interactable" data-color="#cfdbe3">
             <div class="list-content">
               <span>11</span>
               <h2>Teston</h2>
@@ -124,7 +132,7 @@
           </a>
         </li>
         <li class="list-item">
-          <a>
+          <a class="interactable" data-color="#f17170">
             <div class="list-content">
               <span>12</span>
               <h2>Dartitis Clinic</h2>
@@ -133,7 +141,7 @@
           </a>
         </li>
         <li class="list-item">
-          <a>
+          <a class="interactable" data-color="#e884d0">
             <div class="list-content">
               <span>13</span>
               <h2>Racer</h2>
@@ -142,7 +150,7 @@
           </a>
         </li>
         <li class="list-item">
-          <a>
+          <a class="interactable" data-color="#9eacf7">
             <div class="list-content">
               <span>14</span>
               <h2>Sprekest</h2>
@@ -153,6 +161,7 @@
       </ul>
     </section>
     <div id="trailer"></div>
+    <div id="trailer-text"></div>
   </body>
   <script src="./script.js"></script>
 </html>
