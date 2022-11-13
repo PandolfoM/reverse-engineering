@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <title>Spotify</title>
+  </head>
+  <body>
+    <nav class="sidebar">
+      <div>
+        <img src="./assets/logo-white.svg" alt="logo" class="logo" />
+      </div>
+      <div>
+        <a><img src="./assets/home.svg" alt="home" class="svg-size"/>Home</a>
+        <a><img src="./assets/search.svg" alt="search" class="svg-size">Search</a>
+        <a><img src="./assets/library.svg" alt="library" class="svg-size">Your Library</a>
+      </div>
+      <div class="">
+        <a><img src="./assets/new.svg" alt="new playlist" class="box-bg new-playlist">Create Playlist</a>
+        <a><img src="./assets/liked.svg" alt="liked songs" class="box-bg liked-songs">Liked Songs</a>
+      </div>
+      <div>
+        <hr/>
+      </div>
+      <div class="sidebar-playlists">
+        <a data-folder="closed">Folder 1<img src="./assets/folder-arrow.svg" class="folder-arrow" id="folder"/></a>
+        <a>Playlist 1</a>
+      </div>
+    </nav>
+  </body>
+  <script src="./main.js"></script>
+</html>
