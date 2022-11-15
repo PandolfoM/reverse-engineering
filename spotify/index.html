@@ -17,22 +17,107 @@
         <img src="./assets/logo-white.svg" alt="logo" class="logo" />
       </div>
       <div>
-        <a><img src="./assets/home.svg" alt="home" class="svg-size"/>Home</a>
-        <a><img src="./assets/search.svg" alt="search" class="svg-size">Search</a>
-        <a><img src="./assets/library.svg" alt="library" class="svg-size">Your Library</a>
+        <a><img src="./assets/home.svg" alt="home" class="svg-size" />Home</a>
+        <a
+          ><img
+            src="./assets/search.svg"
+            alt="search"
+            class="svg-size"
+          />Search</a
+        >
+        <a
+          ><img src="./assets/library.svg" alt="library" class="svg-size" />Your
+          Library</a
+        >
       </div>
       <div class="">
-        <a><img src="./assets/new.svg" alt="new playlist" class="box-bg new-playlist">Create Playlist</a>
-        <a><img src="./assets/liked.svg" alt="liked songs" class="box-bg liked-songs">Liked Songs</a>
+        <a
+          ><img
+            src="./assets/new.svg"
+            alt="new playlist"
+            class="box-bg new-playlist"
+          />Create Playlist</a
+        >
+        <a
+          ><img
+            src="./assets/liked.svg"
+            alt="liked songs"
+            class="box-bg liked-songs"
+          />Liked Songs</a
+        >
       </div>
       <div>
-        <hr/>
+        <hr />
       </div>
       <div class="sidebar-playlists">
-        <a data-folder="closed">Folder 1<img src="./assets/folder-arrow.svg" class="folder-arrow" id="folder"/></a>
+        <a data-folder="closed"
+          >Folder 1<img
+            src="./assets/folder-arrow.svg"
+            class="folder-arrow"
+            id="folder"
+        /></a>
         <a>Playlist 1</a>
       </div>
     </nav>
+    <footer class="playingbar">
+      <div class="playingbar-content">
+        <div class="now-playing">
+          <img src="./assets/album.jpg" />
+          <div class="current-song-title">
+            <p>Broke Boys</p>
+            <p>Drake, 21 Savage</p>
+          </div>
+          <!-- save to library -->
+          <button title="Save to Your Library">
+            <img src="./assets/save.svg" />
+          </button>
+          <!-- pic in pic -->
+          <button title="Picture in picture">
+            <img src="./assets/pip.svg" />
+          </button>
+        </div>
+        <div class="controls">
+          <div class="btn-controls">
+            <!-- shuffle -->
+            <button data-toggled="true" class="toggleable">
+              <img src="./assets/shuffle.svg" />
+            </button>
+            <!-- last song -->
+            <button><img src="./assets/last.svg" /></button>
+            <!-- Play/Pause -->
+            <button class="playbtn"><img src="./assets/play.svg" /></button>
+            <!-- next song -->
+            <button><img src="./assets/next.svg" /></button>
+            <!-- loop -->
+            <button data-toggled="false" class="toggleable">
+              <img src="./assets/loop.svg" />
+            </button>
+          </div>
+          <div class="music-progress">
+            <!-- current time -->
+            <p class="current-time">0:00</p>
+            <!-- song progress -->
+            <div class="progress"></div>
+            <!-- total time -->
+            <p class="total-time">3:45</p>
+          </div>
+        </div>
+        <div class="volume">
+          <!-- lyrics -->
+          <button><img src="./assets/lyrics.svg" /></button>
+          <!-- queue -->
+          <button><img src="./assets/queue.svg" /></button>
+          <!-- connect to device -->
+          <button><img src="./assets/connect.svg" /></button>
+          <!-- volume icon -->
+          <button><img src="./assets/volume-high.svg" /></button>
+          <!-- volume progressbar -->
+          <div class="progress"></div>
+          <!-- fullscreen -->
+          <button><img src="./assets/fullscreen.svg" /></button>
+        </div>
+      </div>
+    </footer>
   </body>
   <script src="./main.js"></script>
 </html>
