@@ -16,18 +16,30 @@
       <div>
         <img src="./assets/logo-white.svg" alt="logo" class="logo" />
       </div>
-      <div>
-        <a><img src="./assets/home.svg" alt="home" class="svg-size" />Home</a>
+      <div id="sidenav-btns">
         <a
           ><img
-            src="./assets/search.svg"
+            src="./assets/home.svg"
+            alt="home"
+            class="svg-size"
+            data-active="false"
+          />Home</a
+        >
+        <a class="active"
+          ><img
+            data-active="true"
+            src="./assets/search-filled.svg"
             alt="search"
             class="svg-size"
           />Search</a
         >
         <a
-          ><img src="./assets/library.svg" alt="library" class="svg-size" />Your
-          Library</a
+          ><img
+            src="./assets/library.svg"
+            alt="library"
+            class="svg-size"
+            data-active="false"
+          />Your Library</a
         >
       </div>
       <div class="">
@@ -59,6 +71,17 @@
         <a>Playlist 1</a>
       </div>
     </nav>
+    <header class="topnav">
+      <div class="topnav-content">
+        <div class="topnav-controls">
+          <img src="./assets/backward.svg" class="topnav-nav"/>
+          <img src="./assets/forward.svg" class="topnav-nav"/>
+          <img src="./assets/search.svg" class="topnav-search-ico"/>
+          <input type="text" placeholder="What do you want to listen to?"/>
+        </div>
+        <div class="topnav-profile"></div>
+      </div>
+    </header>
     <footer class="playingbar">
       <div class="playingbar-content">
         <div class="now-playing">
